@@ -1,0 +1,307 @@
+% !TEX program = xelatex
+
+\documentclass[11pt]{article}
+\usepackage[
+    a4paper,
+    left=0.8in,
+    right=0.8in,
+    top=1in,
+    bottom=1in,
+    footskip=.25in
+]{geometry}
+
+
+% A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} % other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{supertabular} % for Grades
+\usepackage{longtable} % for tables
+\usepackage{titlesec} % custom "\section"
+\usepackage{color} % for text colors
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+% Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% Setup Fonts with "fontspec" package
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+    Path = fonts/,
+    SmallCapsFont = LinLibertineOC.otf,
+    BoldFont = Calibri-Bold.ttf,
+    ItalicFont = Calibri-Italic.ttf,
+    BoldItalicFont = Calibri-Bold-Italic.ttf
+]
+{Calibri.ttf}
+
+
+% Setup title styles
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering {\Huge \textsc{Ανυφαντης Νικολαος}}\par}
+\par{\centering { \textsc{Βιογραφικο Σημειωμα}}\bigskip\par}
+\par{\centering { \textsc{\textcolor{red}{Last Update: December 2020}}}\bigskip\par}
+
+%-------------------- BEGIN SECTION: Personal Data -----------------------------------
+%Section: Personal Data
+\section{Προσωπικα Στοιχεια}
+\begin{tabular}{rl}
+    \textsc{Ημερομηνια Γεννησης:} & 08 Σεπτεμβρίου 1989 \\
+    \textsc{Διευθυνση:}   & Λαοδάμαντος 6, Ηράκλειο - Κρήτη, Ελλάδα\\
+    \textsc{Τηλεφωνο:}     & +30 697 3756607\\
+    \textsc{Email:}     & \href{mailto:nikosanif@gmail.com}{nikosanif@gmail.com}\\
+    \textsc{Εθνικοτητα:}     & Ελληνική\\
+    \textsc{Στρατιωτικες Υποχρεωσεις:}     & Εκπληρωμένες\\
+\end{tabular}
+
+% add new line
+%\hfill \break
+%-------------------- END SECTION: Personal Data -----------------------------------
+
+%-------------------- BEGIN SECTION: Work Experience -----------------------------------
+%Section: Work Experience at the top
+\section{Επαγγελματικη Εμπειρια}
+\begin{longtable}{r|p{12.5cm}}
+
+% Turintech
+\textsc{Ιαν 2021 – Παρον} & \textbf{Μηχανικός Λογισμικού} \\
+\footnotesize{\textit{London, UK}} &\textsc{Turintech } \\
+&\footnotesize{\textcolor{red}{TODO}} \\
+
+% HCI - FORTH
+\multicolumn{2}{c}{} \\
+\textsc{Απρ 2016 – Ιαν 2021} & \textbf{Μηχανικός Λογισμικού} \\
+\footnotesize{\textit{Ηράκλειο, Ελλάδα}} &\textsc{Εργαστηριο Αλληλεπιδρασης Ανθρωπου - Υπολογιστη (HCI) - ICS } \\
+&\textsc{Ιδρυμα Τεχνολογιας και Ερευνας (FORTH)} \\
+&\footnotesize{Ως Μηχανικός Λογισμικού ασχολήθηκα τόσο στο ερευνητικό όσο και στο παραγωγικό επίπεδο. Ισχυρή εμπειρία σε έξυπνα περιβάλλοντα με τη χρήση τεχνητής νοημοσύνης, δικτύων αισθητήρων και διάχυτων και κινητών υπολογιστικών συστημάτων. Επιπλέον, απεκτήθη εμπειρία στο σχεδιασμό και την ανάπτυξη σημαντικών έργων αξιόλογων εταιρειών σε production επίπεδο.}\\
+
+% ISL - FORTH
+\multicolumn{2}{c}{} \\
+\textsc{Αυγ 2014 – Φεβ 2016} & \textbf{Μηχανικός Λογισμικού, Βοηθός Έρευνας} \\
+\footnotesize{\textit{Ηράκλειο, Ελλάδα}} &\textsc{Εργαστηριο Πληροφοριακων Συστηματων (ISL) - ICS } \\
+&\textsc{Ιδρυμα Τεχνολογιας και Ερευνας (FORTH)} \\
+&\footnotesize{Εργάστηκα σαν βοηθός έρευνας στην ομάδα του εργαστηρίου Πληροφοριακών Συστημάτων υπό την εποπτεία του καθηγητή Ιωάννη Τζίτζικα στο πλαίσιο του μεταπτυχιακού διπλώματος. Δουλεύοντας πάνω σε υπηρεσίες σύγχρονων τεχνολογικών συστημάτων και οπτικοποιήσεις στην περιοχή του Σημασιολογικού Ιστού, καθώς και σε αξιοσημείωτα ευρωπαϊκά έργα.}\\
+
+% Public
+\multicolumn{2}{c}{} \\
+\textsc{Οκτ 2013 – Ιουλ 2014} & \textbf{Υπάλληλος Πωλήσεων στο Τμήμα Τεχνολογίας} \\
+\footnotesize{\textit{Ηράκλειο, Ελλάδα}} &\emph{\textsc{Public, Retail World A.E.}} \\
+
+% CGSoft
+\multicolumn{2}{c}{} \\
+\textsc{Ιουν 2011 – Νοε 2011} & \textbf{Προγραμματιστής} \\
+\footnotesize{\textit{Αθήνα, Ελλάδα}} &\emph{\textsc{CGSoft Company}} \\
+&\footnotesize{Στο πλαίσιο της πρακτικής εργασίας του Πανεπιστημίου Πειραιώς, εργάστηκα πάνω σε ανάπτυξη ιστοσελίδων βασισμένες σε τεχνολογίες Content Management Systems (CMS), όπως Wordpress, Joomla και Magento.}\\
+\end{longtable}
+
+%-------------------- END SECTION: Work Experience -----------------------------------
+
+%-------------------- BEGIN SECTION: Education -----------------------------------
+%Section: Education
+\section{Εκπαιδευση}
+\begin{longtable}{r|p{12.5cm}}
+\textsc{Φεβ 2014 – Φεβ 2016} & \textbf{Πανεπιστήμιο Κρήτης} \\
+\footnotesize{\textit{Ηράκλειο, Ελλάδα}} & Μεταπτυχιακό Δίπλωμα στην \textsc{Επιστημη των Υπολογιστων} \\
+& \textit{Ειδίκευση}: \textsc{Πληροφοριακα Συστηματα, Σημασιολογικος Ιστος, Αλληλεπιδραση Ανθρωπου - Υπολογιστη} \\
+& \textit{Thesis:} ``Διαχείριση Κανόνων Αντιστοιχίσεων για Ολοκλήρωση Πληροφοριών με Οντολογίες''. \footnotesize \small \textit{Επιβλέπων καθηγητής:} Prof. Ιωάννης \textsc{Τζιτζικας}\\
+&\normalsize \textsc{Gpa}: 9/10 \\
+&\footnotesize{Μαθήματα: \textit{Διαχείριση Δεδομένων στον Παγκόσμιο Ιστό, Συστήματα Διαχείρισης Διεργασιών, Προχωρημένα θέματα Αλληλεπίδρασης Ανθρώπου – Υπολογιστή, Διαδραστικά Γραφικά Υπολογιστών, Αναπαράσταση Γνώσης και Συλλογιστική, Ειδικά θέματα Ηλεκτρονικού Εμπορίου}}\\
+
+\multicolumn{2}{c}{} \\
+\textsc{Σεπ 2007 – Σεπ 2011} & \textbf{Πανεπιστήμιο Πειραιώς} \\
+\footnotesize{\textit{Πειραιάς, Ελλάδα}} & Πτυχίο στην \textsc{Πληροφορικη} \\
+& \textit{Ειδίκευση:} \textsc{Πληροφοριακα Συστηματα} \\
+& \textit{Thesis:} ``Ασφάλεια Υπολογιστικών Συστημάτων και Μηχανισμών Διείσδυσης'' \\
+& \footnotesize \small \textit{Επιβλέπων καθηγητής:}: Prof. Ευάγγελος \textsc{Φουντας}\\
+&\normalsize \textsc{Gpa}: 7.8/10 \\
+&\footnotesize{Κυριότερα Μαθήματα: \textit{Δομές Δεδομένων, Αλγόριθμοι, Προγραμματισμός Λογισμικού, Ανάκτηση Πληροφορίας και Αναζήτηση στον Παγκόσμιο Ιστό, Αποθήκες Δεδομένων και Εξόρυξη Γνώσης, Πληροφορικά Συστήματα στο Διαδίκτυο}}
+
+%\hyperlink{grds_cleli}{\hfill| \footnotesize Detailed List of Exams}\\&\\
+\end{longtable}
+
+%-------------------- END SECTION: Education -----------------------------------
+
+%-------------------- BEGIN SECTION: Teaching Experience -------------------------------
+%Section: Teaching Experience
+\section{Εμπειρια Διδασκαλιας}
+\begin{longtable}{r|p{12.5cm}}
+\textsc{Χειμερινο Εξαμηνο} & \textbf{ΗΥ100 - 	Εισαγωγή στην Επιστήμη των Υπολογιστών (C)}  \\
+\textsc{2015-16 \& 2013-14} &\textsc{Βοηθος Καθηγητη} στο τμήμα ΗΥ - Πανεπιστήμιο Κρήτης\\
+
+\multicolumn{2}{c}{} \\
+\textsc{Καλοκαιρινο Εξαμηνο} & \textbf{ΗΥ359 - Διαδικτυοκεντρικός Προγραμματισμός (Java, Servlets, JSP)}  \\
+\textsc{2014-15} &\textsc{Βοηθος Καθηγητη} στο τμήμα ΗΥ - Πανεπιστήμιο Κρήτης\\
+
+
+\multicolumn{2}{c}{} \\
+\textsc{Χειμερινο Εξαμηνο} & \textbf{ΗΥ252 - Αντικειμενοστρεφής Προγραμματισμός (Java)}  \\
+\textsc{2014-15} &\textsc{Βοηθος Καθηγητη} στο τμήμα ΗΥ - Πανεπιστήμιο Κρήτης\\
+
+
+\multicolumn{2}{c}{} \\
+\textsc{Καλοκαιρινο Εξαμηνο} & \textbf{ΗΥ150 - Προγραμματισμός (C++)}  \\
+\textsc{2013-14} &\textsc{Βοηθος Καθηγητη} στο τμήμα ΗΥ - Πανεπιστήμιο Κρήτης\\
+
+\end{longtable}
+
+%-------------------- END SECTION: Teaching Experience -------------------------------
+
+%-------------------- BEGIN SECTION: Technical Skills -------------------------------
+%Section: Technical Skills
+\section{Τεχνικες δεξιοτητες}
+\begin{longtable}{rp{12cm}}
+\textbf{Frond-End Programming} & Angular, JavaScript, Typescript, Jquery, Ajax, Web Sockets, HTML5, CSS3 (SASS, LESS), Bootstrap, D3js, Material Design\\
+
+\\\textbf{Back-End Programming} & Javascript (Node.js), Java, REST/SOAP API Services, Maven projects, Docker, Redis, .NET Framework, C\#, ASP, C/C++, Answer set programming, Prolog, Shell scripting  \\
+
+\\\textbf{Revision Control Systems} & GIT (Bitbucket, GitHub, TortoiseGIT), SVN (TortoiseSVN) \\
+
+\\\textbf{DBM Systems} & NoSQL (MongoDB), MySQL, SQL Server, Oracle, Graph Databases (Neo4j, RDF/S), SQL, SparQL  \\
+
+\\\textbf{Data Formats} & JSON, XML, CSV, Xpath, Xquery, XSLT, XSD, Swagger (yml)\\
+
+\\\textbf{Operating Systems} & Mac OS, MS Windows, Ubuntu/Linux, Backtrack\\
+
+\\\textbf{Software Platforms:} & Netbeans, Visual Studio, Eclipse, Photoshop, Microsoft Office Suite, Google App Engine, Apache 2, Tomcat, IBM Websphere, Adonis BPM tool, \LaTeX \\
+
+%\\\textbf{Modelling} & UML, Venn\\
+
+\\\textbf{Semantic web \& Ontologies} & Protégé, SPARQL, OWL, RDF/s\\
+
+\\\textbf{Άλλες δεξιοτητες} & - Ισχυρή γνώση client/server υποδομής\\
+& - Εμπειρία στα σύγχρονα Node.js packages (Gulp, Express, Passport, etc.) \\
+& - Οικειότητα των τεχνολογιών Internet of Thing (IOT) \\
+& - Ισχυρή γνώση της ενορχήστρωσης Docker containers\\
+& - Καλή εμπειρία στη διαχείριση έργων και οργανωτικές δεξιότητες \\
+
+\end{longtable}
+%-------------------- END SECTION: Technical Skills -------------------------------
+
+%-------------------- BEGIN SECTION: Puplications -------------------------------
+\section{Δημοσιευσεις}
+\begin{itemize}
+\item
+\textbf{Paper}. Nikolaos Anyfantis, Evangelos Kalligiannakis, Achilleas Tsiolkas, Asterios Leonidis, Maria Korozi, Prodromos Lilitsis, Margherita Antona and Constantine Stephanidis "\textit{AmITV: Enhancing the Role of TV in Ambient Intelligence Environments}". Proceedings of the 11th PErvasive Technologies Related to Assistive Environments Conference. ACM, 2018. Corfu, Greece.
+
+\item
+\textbf{Poster}. Asterios Leonidis, Dimitrios Arampatzis, Nikolaos Louloudakis, Nikolaos Anyfantis, Achilleas Tsiolkas and Constantine Stephanidis. "\textit{AmI Solertis: a Web-IDE for Defining the Behaviour of Smart Environments}". 11th Scientific Conference of FORTH. October 13-14, 2017, Heraklion, Crete, Greece.
+
+\item
+\textbf{Συμβολή στο πλαίσιο της Μεταπτυχιακής Εργασίας}. Yannis Marketakis, Nikos Minadakis, Haridimos Kondylakis, Konstantina Konsolaki, Georgios Samaritakis, Maria Theodoridou, Giorgos Flouris, Martin Doerr. "\textit{X3ML Mapping Framework for Information Integration in Cultural Heritage and beyond}". International Journal on Digital Libraries (2016).
+\end{itemize}
+%-------------------- END SECTION: Puplications -------------------------------
+
+\section{Πιστοποιητικα και Εθελοντισμος}
+\begin{itemize}
+\item
+\textit{Technical host at HCI International 2020 Conference.} Ιούλιος 19-24, 2020, FORTH-ICS, Ηράκλειο, Ελλάδα.
+\item
+\textit{9th Symposium and Summer School on Service Oriented Computing - SummerSOC'15.} Ιουνίου 2015, Ηράκλειο, Ελλάδα.
+\item
+\textit{3rd MUMIA Training School on Information Retrieval.} 21-25 Ιουλίου, 2014, FORTH-ICS, Ηράκλειο, Ελλάδα.
+\item
+Google Developer Groups - DevFest Crete 2015. Local ambassador. 26-28 Νοεμβρίου, Ηράκλειο, Ελλάδα. 
+\end{itemize}
+
+
+\section{Αξιοσημειωτα Εργα}
+% add new line
+%\hfill \break
+\textsc{Ευρωπαϊκα Εργα}
+\begin{itemize}
+\item
+\textbf{InCulture} Συλλογή, αφηγηματική συσχέτιση και παρουσίαση της άυλης πολιτιστικής κληρονομιάς. \\ \url{http://www.inculture-project.gr/}
+\item
+\textbf{CuRe} Cultures and Remembrances; Virtual time travels to the encounters of people from the 13th to 20th centuries. \\ \url{http://www.cure-project.gr/}
+\item
+\textbf{TranSOL} Transnational solidarity at time of crisis. The EC project TransSOL (WP 2). \\ \url{http://transsol.eu/project/}
+\item
+\textbf{LIVEWHAT} Living With Hard Times. The EC project LIVEWHAT (WP 6).  \\\url{http://www.livewhat.unige.ch/}
+\item
+\textbf{BlueBRIDGE} is an EC funded project under the H2020 framework that kicked-off on 1st Sep 2015 aiming to further develop and exploit the iMarine e-Infrastructure data services for an ecosystem approach to fisheries. \url{http://www.bluebridge-vres.eu/}
+\end{itemize}
+
+\textsc{Εργα Λογισμικου}
+\begin{itemize}
+\item
+\textbf{Τράπεζα Πειραιώς.} Σχεδίαση και Ανάπτυξη λογισμικού παρουσίασης πολυμεσικού περιεχομένου και διαδραστικής πλοήγησης σε καταστήματα (e-branch).
+\item
+\textbf{ΚΤΕΛ Ηρακλείου - Λασιθίου.} Συμμετοχή στην επανασχεδίαση των πληροφοριακών πινακίδων αφίξεων και αναχωρήσεων του ΚΤΕΛ Ηρακλείου - Λασιθίου, στο πλαίσιο της ανάπτυξης διαδραστικών συστημάτων Διάχυτης Νοημοσύνης για τον νέο σταθμό υπεραστικών λεωφορείων.
+\end{itemize}
+
+% add new line
+%\hfill \break
+\textsc{Ερευνητικα Εργα}
+\begin{itemize}
+\item
+\textbf{Intelligent House.} Σχεδιασμός και ενορχήστρωση εξελιγμένων μηχανισμών για την βελτίωση των καθημερινών δραστηριοτήτων των χρηστών με τη χρήση διάχυτων και κινητών υπολογιστών, δικτύων αισθητήρων, τεχνητής νοημοσύνης, λογισμικού πολυμέσων, middleware και λογισμικού που βασίζονται σε πράκτορες.
+
+\item
+\textbf{AmI-Solertis.} Συμμετοχή στην υλοποίηση Web-IDE για τον ορισμό σεναρίων συμπεριφοράς σε έξυπνα περιβάλλοντα στο πλαίσιο ανάπτυξης της τεχνολογικής πλατφόρμας AmI-Solertis, η οποία επιτρέπει στους χρήστες της να καθορίζουν την `ευφυή' συμπεριφορά Διάχυτης Νοημοσύνης, δημιουργώντας μικρο-προγράμματα μέσω μιας διαδικτυακής προγραμματιστικής πλατφόρμας (AmI-Solertis Studio).
+
+\item
+\textbf{MatWare.} Εργαλείο για την κατασκευή συγκεκριμένων χώρων αποθήκευσης με τη συγκέντρωση σημασιολογικών δεδομένων. Ο κύριος στόχος είναι να αντιμετωπιστεί η ανάγκη για ολοκληρωμένα σύνολα γεγονότων σχετικά με έναν συγκεκριμένο τομέα. \url{http://www.ics.forth.gr/isl/MatWare/}
+\end{itemize}
+
+% add new line
+%\hfill \break
+\textsc{Ακαδημαϊκα Εργα}
+\begin{itemize}
+\item
+Maven web application project το οποίο υλοποιήθηκε στο πλαίσιο του μεταπτυχιακού διπλώματος. Keywords: Java, Javascript, JQuery, REST-services, JSON, Bootstrap, D3js, Treejs, Sigmajs. GitHub repository: \url{https://github.com/nikosanif/Maze}
+%\item
+%Web-based tool that offers exploration capabilities in linked data. Keywords: Java, JSP, Servlets, HTML5, CSS, Javascript, Semantic Web.
+%\item
+%Native application that provides a unified environment that employs a suite of interactive applications for supporting the users of a Smart Home. Keywords: C\#, WPF, Sql Server
+%\item
+%Web-based application that implements Score 4 game in the context of Knowledge Representation and Reasoning. Keywords: ASP, Prolog, Clingo, Java, Javascript, Ajax, JQuery, HTML5, CSS3, Ajax, JQuery
+\item
+Google App Engine applications. Σκοπός αυτής της εργασίας ήταν η εξοικείωση με το Google App Engine και μερικές από τις υπηρεσίες του. JSON (GSON), Java, JAX-RS, Google App Engine, REST-Services, SOAP Services
+%\item
+%Web Technologies - Creation of virtual enterprise Business Plan, SWOT Analysis, Website (Joomla)
+%\item
+%Implementation of Digital Library. Keywords: C\#, SQL, SQL Server
+\end{itemize}
+
+%\hfill \break
+%Section: Languages
+\section{Γλωσσες}
+\begin{tabular}{rl}
+\textsc{Ελληνικα:}&Μητρική\\
+\textsc{Αγγλικα:}& Certificate of competency - Πιστοποιητικό Επαρκούς Γνώσης \\
+\textsc{Ισπανικα:}& Στοιχειώδης επάρκεια\\
+\end{tabular}
+
+%\hfill \break
+
+\section{Προσθετες Πληροφοριες}
+\begin{tabular}{rl}
+\textsc{Διπλωμα Οδηγησης:} & A, B\\
+\textsc{Στρατιωτικες Υποχρεωσεις:} & 9 μήνες θητεία, 24 Νοεμβρίου 2011 - 24 Αυγούστου 2012\\
+\textsc{Ενδιαφεροντα και Δραστηριοτητες:} & Τεχνολογία, Open-source Προγραμματισμός\\
+& Μουσική, Κινηματογραφος, Ταξίδια\\
+&\\
+\textsc{Συστατικες Επιστολες:} & Διαθέσιμες εφόσον ζητηθούν\\
+\end{tabular}
+
+\end{document}

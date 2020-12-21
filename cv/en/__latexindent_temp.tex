@@ -1,0 +1,302 @@
+% !TEX program = xelatex
+
+\documentclass[11pt]{article}
+\usepackage[
+    a4paper,
+    left=0.8in,
+    right=0.8in,
+    top=1in,
+    bottom=1in,
+    footskip=.25in
+]{geometry}
+
+
+% A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} % other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{supertabular} % for Grades
+\usepackage{longtable} % for tables
+\usepackage{titlesec} % custom "\section"
+\usepackage{color} % for text colors
+
+% Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% Setup Fonts with "fontspec" package
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+    Path = fonts/,
+    SmallCapsFont = Fontin-SmallCaps.otf,
+    BoldFont = Fontin-Bold.otf,
+    ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+
+% Setup title styles
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+% Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' % for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering {\Huge \textsc{Nikolaos Anyfantis}}\par}
+\par{\centering { \textsc{Curriculum Vitae}}\bigskip\par}
+\par{\centering { \textsc{\textcolor{red}{Last Update: December 2020}}}\bigskip\par}
+
+%-------------------- BEGIN SECTION: Personal Data -----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Heraklion, Greece  | 08 Sept 1989 \\
+    \textsc{Address:}   & 6 Laodamantos St., Heraklion - Crete, Greece\\
+    \textsc{Telephone No. :}     & +30 697 3756607\\
+    \textsc{email:}     & \href{mailto:nikosanif@gmail.com}{nikosanif@gmail.com}\\
+    \textsc{Nationality:}     & Greek\\
+    \textsc{Military Services:}     & Fulfilled\\
+\end{tabular}
+
+% add new line
+%\hfill \break
+%-------------------- END SECTION: Personal Data -----------------------------------
+
+%-------------------- BEGIN SECTION: Work Experience -----------------------------------
+\section{Work Experience}
+\begin{longtable}{r|p{12.5cm}}
+
+% Turintech
+\textsc{Jan 2021 – Present} & \textbf{Software Engineer} \\
+\footnotesize{\textit{London, UK}} &\textsc{Turintech } \\
+&\footnotesize{\textcolor{red}{TODO}} \\
+
+% HCI - FORTH
+\multicolumn{2}{c}{} \\
+\textsc{Apr 2016 – Jan 2021} & \textbf{Research \& Development Engineer} \\
+\footnotesize{\textit{Heraklion, Greece}} &\textsc{Human Computer Interaction Laboratory (HCI) - ICS } \\
+&\textsc{Foundation for Research and Technology (FORTH)} \\
+&\footnotesize{RnD Engineer on both research and production project areas. Strong experience on intelligent environments with the use of artificial intelligent, sensor networks and pervasive and mobile computing. Moreover, experienced in design and development of significant production projects of remarkable companies.}\\
+
+% ISL - FORTH
+\multicolumn{2}{c}{} \\
+\textsc{Aug 2014 – Feb 2016} & \textbf{Software Developer, Research Assistant} \\
+\footnotesize{\textit{Heraklion, Greece}} &\textsc{Information Systems Laboratory (ISL) - ICS } \\
+&\textsc{Foundation for Research and Technology (FORTH)} \\
+&\footnotesize{As a Research Assistant of Information Systems Laboratory team under supervision of professor Yannis Tzitzikas. Working on services of modern Intelligent Systems and Virtualization technologies on Semantic Web area.}\\
+
+% Public
+\multicolumn{2}{c}{} \\
+\textsc{Oct 2013 – Jul 2014} & \textbf{Sales Executive of IT Department} \\
+\footnotesize{\textit{Heraklion, Greece}} &\emph{\textsc{Public, Retail World A.E.}} \\
+
+% CGSoft
+\multicolumn{2}{c}{} \\
+\textsc{Jun 2011 – Nov 2011} & \textbf{Software Developer} \\
+\footnotesize{\textit{Athens, Greece}} &\emph{\textsc{CGSoft Company}} \\
+&\footnotesize{Working as an undergraduate student on websites development based on Content Management Systems (CMS), such us Wordpress, Joomla and Magento.}\\
+\end{longtable}
+%-------------------- END SECTION: Work Experience -----------------------------------
+
+%-------------------- BEGIN SECTION: Education -----------------------------------
+%Section: Education
+\section{Education}
+\begin{longtable}{r|p{12.5cm}}
+
+% MSc - UOC
+\textsc{Feb 2014 – Feb 2016} & \textbf{University of Crete} \\
+\footnotesize{\textit{Heraklion, Greece}} & \textsc{M.Sc.} in \textsc{Computer Science} \\
+& Specialization: \textsc{Information Systems, Semantic Web, E-Commerce} \\
+& Thesis: ``Mappings Management for Ontology-based Integration'' \\
+& \footnotesize \small Advisor: Prof. Yannis \textsc{Tzitzikas}\\
+&\normalsize \textsc{Gpa}: 9/10 \\
+&\footnotesize{Courses: \textit{Semantic Web Data Management, Process Management Systems, Advanced Topics in Human-Computer Interaction, Interactive Computer Graphics, Special Topics on E-commerce, Knowledge Representation and Reasoning}}\\
+
+% BSc - PaPei
+\multicolumn{2}{c}{} \\
+\textsc{Sep 2007 – Sep 2011} & \textbf{University Of Piraeus} \\
+\footnotesize{\textit{Piraeus, Greece}} & \textsc{B.Sc.} in \textsc{Informatics} \\
+& Specialization: \textsc{Information Systems} \\
+& Thesis: ``IT Systems Security and Penetration Testing'' \\
+& \footnotesize \small Advisor: Prof. Euaggelos \textsc{Fountas}\\
+&\normalsize \textsc{Gpa}: 7.8/10 \\
+&\footnotesize{Important Courses: \textit{Data Structures, Algorithms, Internet and
+Web Programming, Software Engineering, Data Warehousing
+and Data Mining, Information Retrieval and Searching on the
+World Wide Web, Internet-Based Information Systems}}
+
+\end{longtable}
+%-------------------- END SECTION: Education -----------------------------------
+
+%-------------------- BEGIN SECTION: Teaching Experience -------------------------------
+%Section: Teaching Experience
+\section{Teaching Experience}
+\begin{longtable}{r|p{12.5cm}}
+\textsc{Winter Semester} & \textbf{CS100 - Introduction to Computer Science (C)}  \\
+\textsc{2015-16 \& 2013-14} &\textsc{Teaching Assistant} at CS Dept. - University of Crete\\
+
+\multicolumn{2}{c}{} \\
+\textsc{Summer Semester} & \textbf{CS359 - Web Programming (Java, Servlets, JSP)}  \\
+\textsc{2014-15} &\textsc{Teaching Assistant} at CS Dept. - University of Crete\\
+
+
+\multicolumn{2}{c}{} \\
+\textsc{Winter Semester} & \textbf{CS252 - Object-Oriented Programming (Java)}  \\
+\textsc{2014-15} &\textsc{Teaching Assistant} at CS Dept. - University of Crete\\
+
+
+\multicolumn{2}{c}{} \\
+\textsc{Summer Semester} & \textbf{CS150 - Programming (C++)}  \\
+\textsc{2013-14} &\textsc{Teaching Assistant} at CS Dept. - University of Crete\\
+
+\end{longtable}
+%-------------------- END SECTION: Teaching Experience -------------------------------
+
+%-------------------- BEGIN SECTION: Technical Skills -------------------------------
+%Section: Technical Skills
+\section{Technical Skills}
+\begin{longtable}{rp{12cm}}
+\textbf{Frond-End Programming} & Angular, JavaScript, Typescript, Jquery, Ajax, Web Sockets, HTML5, CSS3 (SASS, LESS), Bootstrap, D3js, Material Design\\
+
+\\\textbf{Back-End Programming} & Node.js, Java, C\#, C/C++, ASP, Prolog, REST/SOAP API Services, Maven projects, Shell scripting, Docker  \\
+
+\\\textbf{Revision Control Systems} & GIT (Bitbucket, GitHub, TortoiseGIT), SVN (TortoiseSVN) \\
+
+\\\textbf{DBM Systems} & NoSQL (MongoDB), MySQL, SQL Server, Oracle, Graph Databases (Neo4j, RDF/S), SQL, SparQL  \\
+
+\\\textbf{Data Formats} & JSON, XML, CSV, Xpath, Xquery, XSLT, XSD, Swagger (yml)\\
+
+\\\textbf{Operating Systems} & Mac OS, MS Windows, Ubuntu/Linux, Backtrack\\
+
+\\\textbf{Software Platforms} & Netbeans, Visual Studio, Eclipse, Microsoft Office Suite, Google App Engine, Apache 2, Tomcat, IBM Websphere, Adonis BPM tool, \LaTeX \\
+
+\\\textbf{Modelling} & UML, Venn\\
+
+\\\textbf{Semantic web \& Ontologies} & Protégé, SPARQL, OWL, RDF/s\\
+
+\\\textbf{Other skills} & - Strong knowledge of client/server infrastructure \\
+& - Experienced in modern Node.js packages (Gulp, Express, Passport, etc.) \\
+& - Intimacy of Internet of Thing (IOT) technologies \\
+& - Strong knowledge of Docker containers orchestration \\
+& - Good experience in project management and organizational skills \\
+
+\end{longtable}
+%-------------------- END SECTION: Technical Skills -------------------------------
+
+%-------------------- BEGIN SECTION: Publications -------------------------------
+\section{Puplications}
+\begin{itemize}
+\item
+\textbf{Paper}. Nikolaos Anyfantis, Evangelos Kalligiannakis, Achilleas Tsiolkas, Asterios Leonidis, Maria Korozi, Prodromos Lilitsis, Margherita Antona and Constantine Stephanidis "\textit{AmITV: Enhancing the Role of TV in Ambient Intelligence Environments}". Proceedings of the 11th PErvasive Technologies Related to Assistive Environments Conference. ACM, 2018. Corfu, Greece.
+
+\item
+\textbf{Poster}. Asterios Leonidis, Dimitrios Arampatzis, Nikolaos Louloudakis, Nikolaos Anyfantis, Achilleas Tsiolkas and Constantine Stephanidis. "\textit{AmI Solertis: a Web-IDE for Defining the Behaviour of Smart Environments}". 11th Scientific Conference of FORTH. October 13-14, 2017, Heraklion, Crete, Greece.
+
+\item
+\textbf{Contribution in the context of MSc Thesis}. Yannis Marketakis, Nikos Minadakis, Haridimos Kondylakis, Konstantina Konsolaki, Georgios Samaritakis, Maria Theodoridou, Giorgos Flouris, Martin Doerr. "\textit{X3ML Mapping Framework for Information Integration in Cultural Heritage and beyond}". International Journal on Digital Libraries (2016).
+\end{itemize}
+%-------------------- END SECTION: Publications -------------------------------
+
+\section{Certificates and Volunteerism}
+\begin{itemize}
+\item
+\textit{Technical host at HCI International 2020 Conference.} July 19-24, 2020, FORTH-ICS, Heraklion, Crete, Greece.
+\item
+\textit{9th Symposium and Summer School on Service Oriented Computing - SummerSOC'15.} June 2015, Crete, Greece.
+\item
+\textit{3rd MUMIA Training School on Information Retrieval.} July 21-25, 2014, FORTH-ICS, Heraklion, Crete, Greece.
+\item
+Google Developer Groups - DevFest Crete 2015. Local ambassador. November 26-28, Heraklion, Crete, Greece. 
+\end{itemize}
+
+
+\section{Notable Projects}
+% add new line
+%\hfill \break
+\textsc{European Projects}
+\begin{itemize}
+\item
+\textbf{InCulture} Collection, narrative correlation and presentation of the intangible cultural heritage. \\ \url{http://www.inculture-project.gr/}
+\item
+\textbf{CuRe} Cultures and Remembrances; Virtual time travels to the encounters of people from the 13th to 20th centuries. \\ \url{http://www.cure-project.gr/}
+\item
+\textbf{TranSOL} Transnational solidarity at time of crisis. The EC project TransSOL (WP 2). \\ \url{http://transsol.eu/project/}
+\item
+\textbf{LIVEWHAT} Living With Hard Times. The EC project LIVEWHAT (WP 6).  \\\url{http://www.livewhat.unige.ch/}
+\item
+\textbf{BlueBRIDGE} is an EC funded project under the H2020 framework that kicked-off on 1st Sep 2015 aiming to further develop and exploit the iMarine e-Infrastructure data services for an ecosystem approach to fisheries. \\\url{http://www.bluebridge-vres.eu/}
+\end{itemize}
+
+\textsc{Production Projects}
+\begin{itemize}
+\item
+\textbf{Piraeus Bank.} Design and development of multimedia content presentation software and interactive in-store navigation (e-branch).
+\item
+\textbf{Bus Services.} Participation in the redesign of the information signs of arrivals and departures of the KTEL Heraklion - Lassithi, in the context of the development of interactive Diffuse Intelligence systems for the new intercity bus station.
+\end{itemize}
+
+% add new line
+%\hfill \break
+\textsc{Research Projects}
+\begin{itemize}
+\item
+\textbf{Intelligent House.} Design and orchestrate sophisticated mechanisms in order to enhance the everyday user activities with the use of pervasive and mobile computing, sensor networks, artificial intelligence, multimedia computing, middleware and agent-based software.
+
+\item
+\textbf{MatWare} is a tool for constructing domain-specific warehouses by aggregating semantic data. The main objective is to tackle the need for having integrated sets of facts regarding a particular domain. \url{http://www.ics.forth.gr/isl/MatWare/}
+\end{itemize}
+
+% add new line
+%\hfill \break
+\textsc{Academic Projects}
+\begin{itemize}
+\item
+Maven web application project that was implemented in the context of MSc thesis at the University of Crete. Keywords: Java, Javascript, JQuery, REST-services, JSON, Bootstrap, D3js, Treejs, Sigmajs. GitHub repository: \url{https://github.com/nikosanif/Maze}
+% \item
+% Web-based tool that offers exploration capabilities in linked data. Keywords: Java, JSP, Servlets, HTML5, CSS, Javascript, Semantic Web.
+% \item
+% Native application that provides a unified environment that employs a suite of interactive applications for supporting the users of a Smart Home. Keywords: C\#, WPF, Sql Server
+% \item
+% Web-based application that implements Score 4 game in the context of Knowledge Representation and Reasoning. Keywords: ASP, Prolog, Clingo, Java, Javascript, Ajax, JQuery, HTML5, CSS3, Ajax, JQuery
+\item
+Google App Engine applications. The purpose of this assignment was to be familiarized with the Google App Engine and some of its services. JSON (GSON), Java, JAX-RS, Google App Engine, REST-Services, SOAP Services
+% \item
+% Web Technologies - Creation of virtual enterprise Business Plan, SWOT Analysis, Website (Joomla)
+% \item
+% Implementation of Digital Library. Keywords: C\#, SQL, SQL Server
+\end{itemize}
+
+%\hfill \break
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+\textsc{Greek:}&Mothertongue\\
+\textsc{English:}& Professional working proficiency - Fluent\\
+\textsc{Spanish:}& Elementary proficiency\\
+\end{tabular}
+
+%\hfill \break
+
+\section{Additional Information}
+\begin{tabular}{rl}
+\textsc{Driving Licence:} & A, B\\
+\textsc{Military service:} & 9 months military service (obligatory in Greece)\\ 
+& 24 November 2011 - 24 August 2012\\
+\textsc{Interests and Activities:} & Technology, Open-Source, Programming\\
+& Cinema, Music, Travelling\\
+&\\
+\textsc{Reference Letters:} & Available on request
+\end{tabular}
+
+\end{document}
