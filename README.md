@@ -6,8 +6,14 @@
 - 🤔 &nbsp; Exploring new technologies and developing software solutions.
 - 🎓 &nbsp; I have studied Computer Science and Computer Programming.
 - 💼 &nbsp; I work as a Fullstack Software Engineer.
+- 📝 &nbsp; I write stuff at [dev.to/nikosanif](https://dev.to/nikosanif)
 - 🌱 &nbsp; Enthusiast in Web Technologies and IoT.
 - ⚡ &nbsp; I have a passion for sleek user-friendly design and I love writing nicely architectured, clean and maintainable code.
+- 📫 &nbsp; How to reach me: https://twitter.com/nikosanif
+- 🎙 &nbsp; Pronouns: He/Him
+- 😄 &nbsp; Fun fact: Love watching cartoons
+
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/nikosanif.svg?style=social&label=Follow%20nikosanif)](https://twitter.com/nikosanif)
 
 ## 🛠 Technologies & Tools
 
