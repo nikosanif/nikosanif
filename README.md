@@ -6,10 +6,10 @@
 - 🤔 &nbsp; Exploring new technologies and developing software solutions.
 - 🎓 &nbsp; I have studied Computer Science and Computer Programming.
 - 💼 &nbsp; I work as a Fullstack Software Engineer.
-- 📝 &nbsp; I write stuff at [dev.to/nikosanif](https://dev.to/nikosanif)
-- 🌱 &nbsp; Enthusiast in Web Technologies and IoT.
+- 📝 &nbsp; I write stuff at [dev.to/nikosanif](https://dev.to/nikosanif) and [nikosanif.medium.com](https://nikosanif.medium.com/)
+- 🌱 &nbsp; Enthusiast in Angular and Web Technologies in general.
 - ⚡ &nbsp; I have a passion for sleek user-friendly design and I love writing nicely architectured, clean and maintainable code.
-- 📫 &nbsp; How to reach me: https://twitter.com/nikosanif
+- 📫 &nbsp; How to reach me: [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/nikosanif.svg?style=social&label=Follow%20nikosanif)](https://twitter.com/nikosanif) or [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=social&style=flat&logo=linkedin&labelColor=blue&label=Connect%20Nikos%20Anifantis)](https://www.linkedin.com/in/nikosanifantis/)
 - 🎙 &nbsp; Pronouns: He/Him
 - 😄 &nbsp; Fun fact: Love watching cartoons
 
