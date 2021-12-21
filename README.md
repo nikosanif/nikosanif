@@ -13,8 +13,6 @@
 - 🎙 &nbsp; Pronouns: He/Him
 - 😄 &nbsp; Fun fact: Love watching cartoons
 
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/nikosanif.svg?style=social&label=Follow%20nikosanif)](https://twitter.com/nikosanif)
-
 ## 🛠 Technologies & Tools
 
 - 🌐 &nbsp; Frontend Programming <br />
