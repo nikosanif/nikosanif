@@ -8,7 +8,7 @@ My curriculum vitae repository.
 
 ```sh
 # macOS MacTex Install with homebrew
-$ brew cask install mactex-no-gui
+$ brew install mactex-no-gui --cask
 
 # Arch Linux Family
 $ sudo pacman -S texlive-most
